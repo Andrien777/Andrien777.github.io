@@ -56,25 +56,11 @@ input[type="text"] {
     height: 45px;
     width: 50px;
     color: #000000;
-    font-size: 11px;
     font-family: Tahoma;
     margin-top: -20px;
     margin-bottom: 2px;
     border: solid 3px black;
-    font-size: 30px;
-}
-input[type="number"] {
-    outline: none;
-    border-radius: 10px;
-    height: 45px;
-    width: 50px;
-    color: #000000;
-    font-size: 11px;
-    font-family: Tahoma;
-    margin-top: -20px;
-    margin-bottom: 2px;
-    border: solid 3px black;
-    font-size: 30px;
+    font-size: 50px;
 }
 aside{
     margin-left: 80%;
@@ -86,10 +72,11 @@ ul{
     border-left: 2px solid black;
     margin-top: 0px;
     padding-left: 5px;
+    background-color: lightpink;
 }
 li{
     list-style-type: none;
-    font-size: 20pt;
+    font-size: 25pt;
     display: inline-block;
     padding-right: 10px;
 }
@@ -103,4 +90,8 @@ div.instr{
     font-size: 18pt;
     text-align: justify;
     width: 50%;
+}
+div.primer{
+    text-align: center;
+    width: 100%;
 }
