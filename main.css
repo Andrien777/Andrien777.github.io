@@ -85,7 +85,7 @@ ul{
 }
 li{
     list-style-type: none;
-    font-size: 20;
+    font-size: 20pt;
     display: inline-block;
 }
 body{
@@ -95,6 +95,6 @@ body{
 main{
     background-color: white;
 }
-div.right{
-    display: none;
+div.instr{
+    font-size: 20pt;
 }
