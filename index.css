@@ -9,7 +9,7 @@ input{
 header{
     height: 100px;
     background-color: rgb(186, 236, 240);
-    border: solid rgb(45, 66, 255);
+    border: solid black;
     border-radius: 20px 20px 0 0;
     padding-bottom: 10px;
 }
@@ -28,9 +28,9 @@ h1{
     font-size: 50px;
 }
 main{
-    border-left: solid rgb(45, 66, 255);
-    border-right: solid rgb(45, 66, 255);
-    border-bottom: solid rgb(45, 66, 255);
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
     border-radius: 0 0 20px 20px;
     min-height: 500px;
 }
@@ -64,8 +64,7 @@ li{
     display: inline-block;
 }
 body{
-    background: linear-gradient(to bottom, rgb(216, 216, 255), rgb(150, 150, 255));
-    background-attachment:fixed
+    background-color: white;
 }
 main{
     background-color: white;
