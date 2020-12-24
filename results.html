@@ -27,6 +27,9 @@
                 }
                 document.getElementById('mark').innerHTML = "Ваша оценка:  " + mark;
             }
+            function back(){
+                window.location.replace("index.html");
+			}
 		</script>
 	</head>
 	<body>
@@ -40,6 +43,7 @@
                 setresult();
                 setmark();
 			</script>
+			<input type="button" value="Назад" onclick="back()">
 		</main>
 	</body>
 </html>

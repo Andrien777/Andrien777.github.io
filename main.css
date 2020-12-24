@@ -47,17 +47,18 @@ p{
 
 }
 div{
-    padding-left:20px;
+    padding:20px;
     font-size: 50px;
 }
-input[type="text"] {
+input {
     outline: none;
     border-radius: 10px;
     height: 45px;
-    width: 50px;
+    width: 60px;
+    text-align: center;
     color: #000000;
     font-family: Tahoma;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-bottom: 2px;
     border: solid 3px black;
     font-size: 50px;
@@ -95,3 +96,10 @@ div.primer{
     text-align: center;
     width: 100%;
 }
+input[type="button"]{
+    width: 75%;
+    margin: 20px 12% 0 12%;
+    font-size: 30pt;
+    font-family: Tahoma;
+    height: auto;
+ }
