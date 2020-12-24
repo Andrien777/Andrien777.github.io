@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Учим русский | Результаты</title>
+		<link href="main.css" rel="stylesheet"/>
+		<script>
+            function setresult(){
+                let res = sessionStorage.getItem("corr");
+                let name = sessionStorage.getItem("name");
+                let surname = sessionStorage.getItem("surname");
+                document.getElementById('res').innerHTML = "Поздравляем, " + name + " " + surname + "!!! Вы набрали " + res + " баллов!";
+            }
+            function setmark(){
+                let res = sessionStorage.getItem("corr");
+                let inc = sessionStorage.getItem("incorr");
+                let perc = Math.round((res / 15)) * 100;
+                let mark = 0;
+                if(perc >= 85){
+                    mark = 5;
+                } else if (perc >= 70){
+                    mark = 4;
+                } else if (perc >= 55){
+                    mark = 3;
+                } else{
+                    mark = 2;
+                }
+                document.getElementById('mark').innerHTML = "Ваша оценка:  " + mark;
+            }
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Math game</h1>
+		</header>
+		<main>
+			<div id = "res"></div>
+			<div id = "mark"></div>
+			<script>
+                setresult();
+                setmark();
+			</script>
+		</main>
+	</body>
+</html>

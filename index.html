@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Учим русский | Регистрация</title>
+    <link href="index.css" rel="stylesheet"/>
+    <script>
+        function reg(){
+            let name = document.getElementById("name").value;
+            let surname = document.getElementById("surname").value;
+            let age = document.getElementById("age").value;
+            sessionStorage.setItem("name", name);
+            sessionStorage.setItem("surname", surname);
+            sessionStorage.setItem("age", age);
+            window.location.replace("game.html");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="header">Учим русский | Регистрация</h1>
+    </header>
+    <main>
+        <p><label>Имя</label><input type="text" id="name"></p>
+        <p><label>Фамилия</label><input type="text" id="surname"></p>
+        <p><label>Возраст</label><input type="number" min="0" max="100" id="age"></p>
+        <input type="button" value="Вперед!" onclick="reg()">
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>
