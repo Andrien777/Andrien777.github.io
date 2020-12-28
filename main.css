@@ -123,6 +123,11 @@ input[type="button"]{
     font-family: "Shell Roundhand";
     height: auto;
  }
+input[type="text"]{
+    height: 80px;
+    border: none;
+    color: blue;
+}
 img{
     float: right;
     display: block;

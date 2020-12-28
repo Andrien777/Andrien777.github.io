@@ -37,12 +37,12 @@ function newtask() {
 function nexttask() {
     let inp = document.getElementById('suvk');
     let result;
-    if( inp.value === temp[1]){
-        result = ". Верно." ;
+    if( inp.value.toLowerCase() === temp[1]){
+        result = '. <span green style="color: green; ">Верно.</span>' ;
         tru=tru+1
     }
     else{
-        result= ". Неверно, правильный ответ " + temp[0] + temp[1].toUpperCase() + temp[2] + ', т.к.' + temp[3];
+        result= '. <span red style="color: red; ">Неверно, правильный ответ ' + temp[0] + temp[1].toUpperCase() + temp[2] + ', т.к.' + temp[3] + "</span>";
         fal=fal+1
     }
     histor.innerHTML = temp[0] + inp.value.toUpperCase() + temp[2] + result + "\n";
