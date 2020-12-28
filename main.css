@@ -121,7 +121,7 @@ input[type="button"]{
     margin: 20px 12% 0 12%;
     font-size: 30pt;
     font-family: "Shell Roundhand";
-    height: auto;
+    height: 100px;
  }
 input[type="text"]{
     height: 80px;

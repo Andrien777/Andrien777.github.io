@@ -9,7 +9,7 @@
                 let res = sessionStorage.getItem("corr");
                 let name = sessionStorage.getItem("name");
                 let surname = sessionStorage.getItem("surname");
-                document.getElementById('res').innerHTML = "Поздравляем, " + name + " " + surname + "!!! Вы набрали " + res + " баллов!";
+                document.getElementById('res').innerHTML = "Поздравляем, " + name + " " + surname + "!!! Вы набрали <strong>" + res + "</strong> баллов!";
             }
             function setmark(){
                 let res = sessionStorage.getItem("corr");
@@ -25,7 +25,7 @@
                 } else{
                     mark = 2;
                 }
-                document.getElementById('mark').innerHTML = "Ваша оценка:  " + mark;
+                document.getElementById('mark').innerHTML = 'Ваша оценка:  <span red style=\"color: red; \">' + mark + '</span>';
             }
             function back(){
                 window.location.replace("index.html");
