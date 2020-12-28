@@ -19,7 +19,6 @@ main, header{
 }
 body{
     margin: 0 20% 0 20%;
-    float: center;
     max-width: 60%;
     min-width: 40%;
 }
