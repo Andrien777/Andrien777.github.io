@@ -45,7 +45,7 @@ function nexttask() {
         result= ". Неверно, правильный ответ " + temp[0] + temp[1].toUpperCase() + temp[2];
         fal=fal+1
     }
-    histor.innerHTML = temp[0] + inp.value.toUpperCase() + temp[2] + result + "\n" + histor.innerHTML;
+    histor.innerHTML = temp[0] + inp.value.toUpperCase() + temp[2] + result + "\n";
     if(n > 0){
         newtask();
     }
@@ -55,9 +55,11 @@ function nexttask() {
         window.location.replace("results.html");
     }
     document.getElementById("suvk").focus();
-    document.getElementById("vernie");
+    let vernie = document.getElementById("vernie");
     vernie.innerHTML = tru;
-    document.getElementById("nevern");
+    let nevern = document.getElementById("nevern");
     nevern.innerHTML = fal;
+    let left = document.getElementById("left");
+    left.innerHTML = n + 1;
 }
 newtask();

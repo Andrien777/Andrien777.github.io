@@ -68,18 +68,24 @@ aside{
     overflow: hidden;
 }
 ul{
-    float: right;
+    width: 100%;
     border-bottom: 1px solid black;
-    border-left: 2px solid black;
-    margin-top: 0px;
-    padding-left: 5px;
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 0;
     background-color: lightpink;
+    height: 25pt;
+    display: flex;
+    justify-content: space-between;
 }
 li{
     list-style-type: none;
-    font-size: 25pt;
+    font-size: 20pt;
     display: inline-block;
     padding-right: 10px;
+    padding-top:0;
+    margin-top: 0;
 }
 body{
     background-color: white;
@@ -90,11 +96,19 @@ main{
 div.instr{
     font-size: 18pt;
     text-align: justify;
-    width: 50%;
+    padding-top: 0;
 }
 div.primer{
     text-align: center;
     width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+div.cont{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 input[type="button"]{
     width: 75%;
