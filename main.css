@@ -48,7 +48,7 @@ p{
     margin: 0;
     font-size: 20px;
     padding: 0 0 0 20px;
-    max-width: 200px;
+    width: 75%;
     font-family: "Shell Roundhand";
 }
 div{
