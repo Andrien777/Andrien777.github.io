@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Учим русский | Результаты</title>
 		<link href="main.css" rel="stylesheet"/>
+		<link rel="shortcut icon" href="favicon.gif" type="image/gif">
 		<script>
             function setresult(){
                 let res = sessionStorage.getItem("corr");
@@ -13,9 +14,8 @@
             }
             function setmark(){
                 let res = sessionStorage.getItem("corr");
-                let inc = sessionStorage.getItem("incorr");
                 let perc = Math.round((res / 15)) * 100;
-                let mark = 0;
+                let mark;
                 if(perc >= 85){
                     mark = 5;
                 } else if (perc >= 70){
