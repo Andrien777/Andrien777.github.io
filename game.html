@@ -5,8 +5,24 @@
 		<title>Учим русский | Игра</title>
 		<link href="main.css" rel="stylesheet"/>
 		<link rel="shortcut icon" href="favicon.gif" type="image/gif">
+		<script>
+			let playing = true;
+			function toggle(){
+			    if(playing){
+			        document.getElementById("bg").pause();
+			        playing = false;
+			        document.getElementById("ctrl").src="pngtree-speaker-vector-icon-white-background-png-image_1870193.jpg";
+				}
+			    else{
+                    document.getElementById("bg").play();
+                    playing = true;
+                    document.getElementById("ctrl").src="unnamed.jpg";
+				}
+			}
+		</script>
 	</head>
 	<body>
+		
 		<header>
 			<h1>Учим русский | Игра</h1>
 		</header>
@@ -18,6 +34,7 @@
 					<span id= "nevern">0</span></li>
 				<li>Осталось вопросов:
 					<span id= "left">15</span></li>
+				<li><button onclick="toggle()"><img src="unnamed.jpg" id="ctrl" alt="mute" width="28" height="28"></button></li>
 			</ul>
 			<div class="instr">Введите на место пропуска один или несколько символов. Если символ не нужен, или надо показать слитное написание, поставьте '/'. Если надо показать раздельное написание, поставьте '_'</div>
 			<div id="primer" class="primer"></div>
@@ -28,6 +45,7 @@
 		<aside>
 		</aside>
 		<footer>
+			<audio id="bg" src="c93bdf8c4c82d599.mp3" loop="loop" autoplay="autoplay" >
 		</footer>
 	</body>
 </html>
