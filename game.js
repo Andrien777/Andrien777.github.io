@@ -25,12 +25,14 @@ let n = 15;
 let primer = document.getElementById('primer');
 let histor = document.getElementById('histor');
 let temp;
+
 function choice(){
     let i = Math.round(Math.random() * (words.length - 1));
     let z = words[i];
     words.splice(i, 1);
     return z;
 }
+
 function newtask() {
     --n;
     temp = choice();
@@ -38,6 +40,7 @@ function newtask() {
     document.getElementById("suvk").focus();
     document.getElementById('suvk').onchange = nexttask;
 }
+
 function nexttask() {
     let inp = document.getElementById('suvk');
     let result;
@@ -66,4 +69,6 @@ function nexttask() {
     let left = document.getElementById("left");
     left.innerHTML = n + 1;
 }
+
+
 newtask();
