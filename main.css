@@ -129,6 +129,8 @@ input[type="text"]{
     color: blue;
 }
 img{
-    float: right;
     display: block;
+}
+div.cont{
+    display: flex;
 }

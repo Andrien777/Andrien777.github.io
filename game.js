@@ -45,11 +45,11 @@ function nexttask() {
     let inp = document.getElementById('suvk');
     let result;
     if( inp.value.toLowerCase() === temp[1]){
-        result = '. <span green style="color: green; ">Верно.</span>' ;
+        result = '.<br/><span style="color: green; ">Верно.</span>' ;
         tru=tru+1
     }
     else{
-        result= '. <span red style="color: red">Неверно, правильный ответ ' + temp[0] + temp[1].toUpperCase() + temp[2] + ', т.к.' + temp[3] + "</span>";
+        result= '.<br/><span style="color: red; height: auto; max-width: 60%;">Неверно, правильный ответ ' + temp[0] + temp[1].toUpperCase() + temp[2] + ', т.к.' + temp[3] + "</span>";
         fal=fal+1;
     }
     histor.innerHTML = temp[0] + inp.value.toUpperCase() + temp[2] + result + "\n";
